@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de Endereço</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main>
@@ -15,23 +15,23 @@
             <form>
                 <label for="cep">
                     CEP
-                    <input type="text" class="form-control" max-length="8 " id="cep">
+                    <input type="text" class="form-control" max-length="9" id="cep">
                 </label>
-                <label for="logradouro">
+                <label for="street">
                     Logradouro
-                    <input type="text" class="form-control" id="logradouro">
+                    <input type="text" class="form-control" id="street">
                 </label>
-                <label for="bairro">
+                <label for="neighborhood">
                     Bairro
-                    <input type="text" class="form-control" id="bairro">
+                    <input type="text" class="form-control" id="neighborhood">
                 </label>
-                <label for="localidade">
+                <label for="city">
                     Localidade
-                    <input type="text" class="form-control" id="localidade">
+                    <input type="text" class="form-control" id="city">
                 </label>
-                <label for="uf">
+                <label for="state">
                     UF
-                    <input type="text" class="form-control" id="uf">
+                    <input type="text" class="form-control" id="state">
                 </label>
                 <input type="submit" value="Enviar" id="submit">
             </form>
