@@ -1,4 +1,6 @@
 const cep = document.getElementById("cep");
+const fomr = document.getElementById("form")
+
 //Verifica se contém o mesmo campo no doc e add o valor nele
 const showData = (result) => {
   for (const campo in result) {
@@ -7,6 +9,7 @@ const showData = (result) => {
     }
   }
 };
+
 // Quando tira o foco input cep faz a consulta por fetch
 cep.addEventListener("blur", (e) => {
   //tratamento do número
@@ -27,3 +30,6 @@ cep.addEventListener("blur", (e) => {
     .catch((e) => console.log(e));
 });
 
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+});
