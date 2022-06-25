@@ -35,6 +35,9 @@ label {
     flex-direction: column;
     margin: 4px;
 }
+#cepSmall {
+    color: red;
+}
 input {
     border-style: solid;
     border-width: 2px;
