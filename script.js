@@ -34,6 +34,7 @@ cep.addEventListener("blur", (e) => {
       }
       
       response.json().then((data) => showData(data));
+      document.getElementById("cepSmall").innerText = ""
       
     })
     .catch((e) => {
